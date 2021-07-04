@@ -1,5 +1,3 @@
-# lemonbot
+# eivlbot
 
-Bot for a dumbass lemon-themed server, since retired.
-
-🍋 🍋 
+Bot for a discord stuff.

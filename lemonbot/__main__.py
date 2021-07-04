@@ -11,7 +11,7 @@ log = logging.getLogger(__name__)
 # Initialize the bot
 bot = Bot(
     command_prefix=when_mentioned_or(constants.Bot.prefix),  # Invoked commands must have this prefix
-    activity=discord.Game(name="lemon"),
+    activity=discord.Game(name="Minecraft|?help"),
     case_insensitive=True,
     max_messages=10_000,
 )
@@ -22,6 +22,7 @@ bot.load_extension("lemonbot.cogs.lemon_name_force")
 bot.load_extension("lemonbot.cogs.minecraft")
 bot.load_extension("lemonbot.cogs.role_assignment")
 bot.load_extension("lemonbot.cogs.purge")
+bot.load_extension('lemonbot.cogs.rules')
 
 # Validate the token
 token = constants.Bot.token

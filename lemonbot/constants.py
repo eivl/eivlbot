@@ -123,28 +123,49 @@ LEMON_FACTS = [
     "To power a flashlight bulb, you need 500 wired lemons to conduct electricity.",
     "The heaviest lemon was 11 pounds, 9.7 ounces in 2003.",
     "Lemon was a common unisex name in the 1900’s.",
+    "Lemon is aws0me.",
 ]
 
 
+MINECRAFT_RULES = [
+    "No unnecessary griefing.",
+    "No unnecessary killing.",
+    "No stealing.",
+]
+
+DISCORD_RULES = [
+    "Follow the Discord Community Guidelines and Terms of Service.",
+    "No harassment, discrimination, or abuse."
+    "Respect staff members and listen to their instructions.",
+    "English only.",
+    "No Spam.",
+    "Only advertise in appropriate channels.",
+]
+LOGO = 'https://i.imgur.com/QTqAQMs.png'
 class Bot:
     """Constants relating to the bot itself."""
-    token: Optional[str] = os.environ.get("LEMON_DISCORD_TOKEN")
-    prefix: str = "!"
+    token: Optional[str] = os.environ.get("EIVLBOT_DISCORD_TOKEN")
+    prefix: str = "?"
 
 
 class Channels:
     """Channel IDs that are relevant for this community."""
-    mc_rules: int = 721496293024989265
-    mc_chat: int = 721396164489904189
+    mc_rules: int = 858303717437603840
+    mc_chat: int = 858056417540964354
+    mc_modpacks: int = 858351909135056907
 
 
 class Roles:
     """Roles relevant to this bot."""
-    og_lemon: int = 718178484496760840
-    average_lemon: int = 718181055902908516
-    lemon_allies: int = 718216622929739926
+    og_lemon: int = 858056466739888149
+    average_lemon: int = 858056466739888149
+    lemon_allies: int = 858056466739888149
+    owner: int = 858056466739888149
 
 
 class Users:
     """Users relevant to this bot."""
-    owner_lemon: int = 353290053377589258
+    owner_lemon: int = 172395097705414656
+    eivl: int = 172395097705414656
+    gargoyle: int = 182532740632018944
+
